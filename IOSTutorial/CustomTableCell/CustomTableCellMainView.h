@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CustomTableCellMainView : UIViewController
+@interface CustomTableCellMainView : UIViewController <UITableViewDelegate, UITableViewDataSource> {
+    
+    IBOutlet UITableView *_tableView;
+}
 
 @end

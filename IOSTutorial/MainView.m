@@ -7,6 +7,7 @@
 //
 
 #import "MainView.h"
+#import "CustomTableCellMainView.h"
 
 @interface MainView ()
 
@@ -56,6 +57,17 @@
     [_details release];
     [_tableView release];
     [super dealloc];
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        CustomTableCellMainView *view = [[CustomTableCellMainView alloc] initWithNibName:@"CustomTableCellMainView" bundle:nil];
+        [self.navigationController pushViewController:view animated:YES];
+        [view release];
+    }
 }
 
 #pragma mark - UITableViewDataSourceDelegate

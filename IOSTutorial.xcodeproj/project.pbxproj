@@ -17,6 +17,9 @@
 		3BF4D43D153DA56D001BB718 /* CustomTableCellMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF4D43B153DA56D001BB718 /* CustomTableCellMainView.xib */; };
 		3BF4D441153DA58B001BB718 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4D43F153DA58B001BB718 /* MainView.m */; };
 		3BF4D442153DA58B001BB718 /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3BF4D440153DA58B001BB718 /* MainView.xib */; };
+		3BF4D445153DA981001BB718 /* CustomTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4D444153DA981001BB718 /* CustomTableCell.m */; };
+		3BF4D44B153DAB1E001BB718 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF4D449153DAB1E001BB718 /* icon1.png */; };
+		3BF4D44C153DAB1E001BB718 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BF4D44A153DAB1E001BB718 /* icon2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,10 @@
 		3BF4D43E153DA58B001BB718 /* MainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
 		3BF4D43F153DA58B001BB718 /* MainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
 		3BF4D440153DA58B001BB718 /* MainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
+		3BF4D443153DA981001BB718 /* CustomTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomTableCell.h; path = CustomTableCell/CustomTableCell.h; sourceTree = "<group>"; };
+		3BF4D444153DA981001BB718 /* CustomTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomTableCell.m; path = CustomTableCell/CustomTableCell.m; sourceTree = "<group>"; };
+		3BF4D449153DAB1E001BB718 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon1.png; path = Images/icon1.png; sourceTree = "<group>"; };
+		3BF4D44A153DAB1E001BB718 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon2.png; path = Images/icon2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +89,7 @@
 		3BF4D427153DA4CB001BB718 /* IOSTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				3BF4D446153DAAE5001BB718 /* Images */,
 				3BF4D438153DA4DF001BB718 /* CustomTableCell */,
 				3BF4D430153DA4CC001BB718 /* AppDelegate.h */,
 				3BF4D431153DA4CC001BB718 /* AppDelegate.m */,
@@ -110,8 +118,19 @@
 				3BF4D439153DA56D001BB718 /* CustomTableCellMainView.h */,
 				3BF4D43A153DA56D001BB718 /* CustomTableCellMainView.m */,
 				3BF4D43B153DA56D001BB718 /* CustomTableCellMainView.xib */,
+				3BF4D443153DA981001BB718 /* CustomTableCell.h */,
+				3BF4D444153DA981001BB718 /* CustomTableCell.m */,
 			);
 			name = CustomTableCell;
+			sourceTree = "<group>";
+		};
+		3BF4D446153DAAE5001BB718 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3BF4D449153DAB1E001BB718 /* icon1.png */,
+				3BF4D44A153DAB1E001BB718 /* icon2.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +186,8 @@
 				3BF4D42C153DA4CB001BB718 /* InfoPlist.strings in Resources */,
 				3BF4D43D153DA56D001BB718 /* CustomTableCellMainView.xib in Resources */,
 				3BF4D442153DA58B001BB718 /* MainView.xib in Resources */,
+				3BF4D44B153DAB1E001BB718 /* icon1.png in Resources */,
+				3BF4D44C153DAB1E001BB718 /* icon2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +202,7 @@
 				3BF4D432153DA4CC001BB718 /* AppDelegate.m in Sources */,
 				3BF4D43C153DA56D001BB718 /* CustomTableCellMainView.m in Sources */,
 				3BF4D441153DA58B001BB718 /* MainView.m in Sources */,
+				3BF4D445153DA981001BB718 /* CustomTableCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
