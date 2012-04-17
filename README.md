@@ -1,4 +1,4 @@
 iOS Tutorial Source Codes
 =========================
 
-Sorry. This project's comments are written Korean only.
+Sorry. This project's comments are written by Korean.
