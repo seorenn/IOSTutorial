@@ -61,6 +61,18 @@
     [super dealloc];
 }
 
+#pragma mark - UITableViewDelegate
+
+// 셀 높이를 알려주기 위한 곳
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // CustomTAbleCell 내부에서 height를 30으로
+    // 고정시켜 놨음. 그래서 30을 리턴함.
+    // 만약 각 셀 마다 높이가 다르다면 row별로
+    // 높이를 각각 알려줘야 된다는 점을 기억할 것.
+    return 30;
+}
+
 #pragma mark - UITableViewDataSourceDelegate
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
